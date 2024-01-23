@@ -1,0 +1,8 @@
+name: analisis_numerico
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - scipy
+prefix: /home/jorge/miniconda3/envs/analisis_numerico

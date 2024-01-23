@@ -1,5 +1,12 @@
 # Tutorial básico de conda
 
+**Tabla de contenidos:**
+
+- [Qué es conda](#qué-es-conda)
+- [Primeros pasos con conda](#primeros-pasos-con-conda)
+- [Ejemplos prácticos](#ejemplos-prácticos)
+- [Comandos esenciales](#comandos-esenciales)
+
 ## Qué es conda
 
 `conda` es una herramienta que permite crear *entornos virtuales* de python (aunque también soporta otros lenguajes como R y proyectos multilenguaje), en los cuales se pueden listar, instalar y desinstalar paquetes dentro de cada uno de estos entornos. Esto te permite poder instalar diferentes versiones de paquetes para distintos proyectos que tengas sin causar problemas de compatibilidad entre ellos.
@@ -14,7 +21,7 @@ Tanto **Anaconda** como **Miniconda** pueden instalarse en Windows, MacOS y Linu
 [![Static Badge](https://img.shields.io/badge/-Instalaci%C3%B3n%20Anaconda-%23000000?logo=anaconda&logoColor=%23fbfbfb&labelColor=%2344A833&color=%230c0c0c)](https://docs.anaconda.com/free/anaconda/install/) 
 [![Static Badge](https://img.shields.io/badge/-Instalaci%C3%B3n%20Miniconda-%23000000?logo=anaconda&logoColor=%23fbfbfb&labelColor=%2344A833&color=%230c0c0c)](https://docs.conda.io/projects/miniconda/en/latest/)
 
-## Primeros pasos
+## Primeros pasos con conda
 
 Para poder utilizar los siguientes comandos es necesario ya haber instalado e inicializado **Anaconda** o **Miniconda**. 
 
@@ -76,6 +83,41 @@ Para poder revisar qué paquetes se han instalado en tu entorno activo de `conda
 
 ```
 conda list
+```
+
+## Ejemplos prácticos
+
+### Ejemplo 1 : Crear entorno con varios paquetes y exportar la información del entorno a un archivo
+
+Primero, creemos un entorno de `conda` llamado `analisis_numerico` y activémoslo:
+
+```
+conda create -n analisis_numerico
+conda activate analisis_numerico
+```
+
+Luego instalemos los paquetes `numpy`, `scipy` y `matplotlib`:
+
+```
+conda install numpy scipy matplotlib
+```
+
+Después de que se terminen de instalar los paquetes y sus dependencias, revisemos la lista de paquetes instalados en el entorno:
+
+```
+conda list
+```
+
+Finalmente, exportemos la información del entorno a un archivo llamado `entorno_1.yml` que se guardará en la carpeta actual de la terminal (el formato `.yml` es el estándar para exportar los entornos de `conda`).
+
+```
+conda env export > entorno_1.yml
+```
+
+Si se quiere exportar la información del entorno para poder ser utilizada en otras plataformas o sistemas se puede utilizar el siguiente comando:
+
+```
+conda env export --from-history > entorno_1_from-history.yml
 ```
 
 ## Comandos esenciales
