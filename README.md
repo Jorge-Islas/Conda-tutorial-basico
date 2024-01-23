@@ -120,6 +120,11 @@ Si se quiere exportar la información del entorno para poder ser utilizada en ot
 conda env export --from-history > entorno_1_from-history.yml
 ```
 
+Puedes comparar los archivos `.yml` que generaste con estos archivos:
+
+- [entorno_1.yml](./entorno_1.yml)
+- [entorno_1_from-history.yml](./entorno_1_from-history.yml)
+
 ## Comandos esenciales
 
 <details>
@@ -189,7 +194,5 @@ conda env export --from-history > entorno_1_from-history.yml
 **Importar entornos de conda**
 
 `conda create -n NOMBRE --file ARCHIVO.yml`
-
-`conda create -n NOMBRE --file ARCHIVO.txt`
 
 </details>
