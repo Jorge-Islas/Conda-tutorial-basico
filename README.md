@@ -165,34 +165,34 @@ Puedes comparar los archivos `.yml` que generaste con estos archivos:
 
 **Revisar paquetes instalados en entornos de conda**
 
-`conda list`
+`conda list` : Muestra la lista de paquetes instalados en el entorno de `conda` activo.
 
-`conda list -n myenv`
+`conda list -n NOMBRE` : Muestra la lista de paquetes instalados en el entorno de `conda` llamado `NOMBRE`.
 
-`conda list -n myenv NOMBRE_PAQUETE`
+`conda list -n NOMBRE NOMBRE_PAQUETE` : Muestra si el paquete llamado `NOMBRE_PAQUETE` está instalado en el entorno de `conda` llamado `NOMBRE`.
 
 **Eliminar entornos de conda**
 
-`conda remove -n NOMBRE --all`
+`conda remove -n NOMBRE --all` : Elimina el entorno de `conda` llamado `NOMBRE`.
 
 **Instalar y desinstalar paquetes en entornos de conda**
 
-`conda install NOMBRE_PAQUETE`
+`conda install NOMBRE_PAQUETE` : Instala el paquete llamado `NOMBRE_PAQUETE` en el entorno de `conda` activo.
 
-`conda install NOMBRE_PAQUETE=NUMERO_VERSION`
+`conda install NOMBRE_PAQUETE=NUMERO_VERSION` : Instala la versión `NUMERO_VERSION` del paquete llamado `NOMBRE_PAQUETE` en el entorno de `conda` activo.
 
-`conda install -c NOMBRE_CANAL NOMBRE_PAQUETE`
+`conda install -c NOMBRE_CANAL NOMBRE_PAQUETE` : Instala el paquete llamado `NOMBRE_PAQUETE` en el entorno de `conda` activo desde el canal llamado `NOMBRE_CANAL`. El canal se refiere a instalar el paquete desde, por ejemplo, el repositorio de Anaconda, de Conda Forge o del especificado.
 
-`conda uninstall NOMBRE_PAQUETE`
+`conda uninstall NOMBRE_PAQUETE` : Desinstala el paquete `NOMBRE_PAQUETE` del entorno de `conda` activo.
 
 **Exportar entornos de conda**
 
-`conda env export > environment.yml`
+`conda env export > entorno.yml` : Crea el archivo `entorno.yml` en la carpeta actual de la terminal, el cual contiene la información del entorno de `conda` activo (nombre del paquete, canales, paquetes instalados). Al usar este archivo en otras plataformas o sistemas puede haber problemas de instalación o de compatibilidad.
 
-`conda env export --from-history > environment.yml`
+`conda env export --from-history > entorno.yml` : Crea el archivo `entorno.yml` en la carpeta actual de la terminal, el cual contiene la información del entorno de `conda` activo (nombre del paquete, canales, paquetes instalados). Este archivo se puede usar en distintas plataformas o sistemas para evitar problemas de instalación.
 
 **Importar entornos de conda**
 
-`conda create -n NOMBRE --file ARCHIVO.yml`
+`conda create -n NOMBRE --file ARCHIVO.yml` : Crea un entorno de `conda` llamado `NOMBRE` a partir de la información del archivo `ARCHIVO.yml`, instalando todos los paquetes incluidos desde los canales indicados.
 
 </details>
