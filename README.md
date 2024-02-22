@@ -12,7 +12,7 @@
 `conda` es una herramienta que permite crear *entornos virtuales* de python (aunque también soporta otros lenguajes como R y proyectos multilenguaje), en los cuales se pueden listar, instalar y desinstalar paquetes dentro de cada uno de estos entornos. Esto te permite poder instalar diferentes versiones de paquetes para distintos proyectos que tengas sin causar problemas de compatibilidad entre ellos.
 
 Para utilizar `conda` como tu gestor de paquetes de python puedes descargarlo e instalarlo en dos versiones: **Anaconda** o **Miniconda**. La diferencia principal entre estas dos presentaciones es que Miniconda incluye los paquetes mínimos indispensables para poder utilizar `conda`, mientras que Anaconda incluye más herramientas y funcionalidades pero es más pesado. Si quieres saber cuales son las diferencias, pros y contras de estas presentaciones da clic aquí:
-[Diferencias entre Anaconda y Miniconda.](https://jorgeislas.com/)
+[Diferencias entre Anaconda y Miniconda.](https://jorgeislas.com/2024/01/23/diferencia-entre-anaconda-y-miniconda/)
 
 ### Instrucciones de instalación de Anaconda y Miniconda
 
