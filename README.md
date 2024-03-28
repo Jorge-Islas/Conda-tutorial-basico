@@ -151,7 +151,7 @@ Puedes comparar los archivos `.yml` que generaste con estos archivos:
 
 - `conda create -n NOMBRE python=VERSION` : Crea un entorno de `conda` utilizando la versión de python especificada en `VERSION` (por ejemplo, 3.9). Reemplaza `NOMBRE` por el nombre que le quieras dar al entorno.
 
-- `conda create -n NOMBRE -f environment.yml` : Crea un entorno de `conda` a partir de las especificaciones dadas en el archivo `environment.yml`. Reemplaza `NOMBRE` por el nombre que le quieras dar al entorno.
+- `conda env create -f environment.yml` : Crea un entorno de `conda` a partir de las especificaciones dadas en el archivo `environment.yml`.
 
 - `conda rename -n NOMBRE NUEVO_NOMBRE` : Cambia el nombre del entorno `NOMBRE` al nuevo nombre `NUEVO_NOMBRE`.
 
