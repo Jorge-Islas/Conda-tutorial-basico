@@ -151,7 +151,7 @@ Puedes comparar los archivos `.yml` que generaste con estos archivos:
 
 - `conda create -n NOMBRE python=VERSION` : Crea un entorno de `conda` utilizando la versión de python especificada en `VERSION` (por ejemplo, 3.9). Reemplaza `NOMBRE` por el nombre que le quieras dar al entorno.
 
-- `conda env create -f environment.yml` : Crea un entorno de `conda` a partir de las especificaciones dadas en el archivo `environment.yml`.
+- `conda env create -n NOMBRE -f environment.yml` : Crea un entorno de `conda` a partir de las especificaciones dadas en el archivo `environment.yml`. Reemplaza `NOMBRE` por el nombre que le quieras dar al entorno.
 
 - `conda rename -n NOMBRE NUEVO_NOMBRE` : Cambia el nombre del entorno `NOMBRE` al nuevo nombre `NUEVO_NOMBRE`.
 
@@ -190,9 +190,5 @@ Puedes comparar los archivos `.yml` que generaste con estos archivos:
 - `conda env export > entorno.yml` : Crea el archivo `entorno.yml` en la carpeta actual de la terminal, el cual contiene la información del entorno de `conda` activo (nombre del paquete, canales, paquetes instalados). Al usar este archivo en otras plataformas o sistemas puede haber problemas de instalación o de compatibilidad.
 
 - `conda env export --from-history > entorno.yml` : Crea el archivo `entorno.yml` en la carpeta actual de la terminal, el cual contiene la información del entorno de `conda` activo (nombre del paquete, canales, paquetes instalados). Este archivo se puede usar en distintas plataformas o sistemas para evitar problemas de instalación.
-
-**Importar entornos de conda**
-
-- `conda create -n NOMBRE --file ARCHIVO.yml` : Crea un entorno de `conda` llamado `NOMBRE` a partir de la información del archivo `ARCHIVO.yml`, instalando todos los paquetes incluidos desde los canales indicados.
 
 </details>
